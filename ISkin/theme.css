@@ -1,0 +1,526 @@
+
+@importtheme "_base";
+
+CustomIDAMemo
+{   
+    font-size: 14px;
+    qproperty-line-fg-default                     : blue;        /* Default                                       */
+    qproperty-line-fg-regular-comment             : blue;        /* Regular comment                               */
+    qproperty-line-fg-repeatable-comment          : gray;        /* Repeatable commen                             */
+    qproperty-line-fg-automatic-comment           : gray;        /* Automatic comment                             */
+    qproperty-line-fg-insn                        : navy;        /* Instruction                                   */
+    qproperty-line-fg-dummy-data-name             : navy;        /* Dummy Data Name                               */
+    qproperty-line-fg-regular-data-name           : blue;        /* Regular Data Name                             */
+    qproperty-line-fg-demangled-name              : blue;        /* Demangled Name                                */
+    qproperty-line-fg-punctuation                 : navy;        /* Punctuation                                   */
+    qproperty-line-fg-charlit-in-insn             : green;       /* Char constant                                 */
+    qproperty-line-fg-strlit-in-insn              : lime;        /* String constant                               */
+    qproperty-line-fg-numlit-in-insn              : green;       /* Numeric constant                              */
+    qproperty-line-fg-void-opnd                   : #FF8000;     /* Void operand                                  */
+    qproperty-line-fg-code-xref                   : green;       /* Code reference                                */
+    qproperty-line-fg-data-xref                   : #8080FF;     /* Data reference                                */
+    qproperty-line-fg-code-xref-to-tail           : red;         /* Code reference to tail byte                   */
+    qproperty-line-fg-data-xref-to-tail           : olive;       /* Data reference to tail byte                   */
+    qproperty-line-fg-error                       : #010101;     /* Error or problem                              */
+    qproperty-line-fg-line-prefix                 : silver;      /* Line prefix                                   */
+    qproperty-line-fg-opcode-byte                 : blue;        /* Opcode bytes                                  */
+    qproperty-line-fg-extra-line                  : blue;        /* Extra line                                    */
+    qproperty-line-fg-alt-opnd                    : blue;        /* Alternative operand                           */
+    qproperty-line-fg-hidden                      : gray;        /* Hidden name                                   */
+    qproperty-line-fg-libfunc                     : #8080FF;     /* Library function name                         */
+    qproperty-line-fg-locvar                      : green;       /* Local variable name                           */
+    qproperty-line-fg-dummy-code-name             : navy;        /* Dummy code name                               */
+    qproperty-line-fg-asm-directive               : blue;        /* Assembler directive                           */
+    qproperty-line-fg-macro                       : purple;      /* Macro                                         */
+    qproperty-line-fg-strlit-in-data              : green;       /* String constant in data directive             */
+    qproperty-line-fg-charlit-in-data             : green;       /* Char constant in data directive               */
+    qproperty-line-fg-numlit-in-data              : #008040;     /* Numeric constant in data directive            */
+    qproperty-line-fg-keyword                     : navy;        /* Keywords (offset, byte ptr, near)             */
+    qproperty-line-fg-register-name               : navy;        /* Register name                                 */
+    qproperty-line-fg-import-name                 : fuchsia;     /* Imported name                                 */
+    qproperty-line-fg-segment-name                : olive;       /* Segment name                                  */
+    qproperty-line-fg-dummy-unknown-name          : navy;        /* Dummy unknown name                            */
+    qproperty-line-fg-code-name                   : blue;        /* Regular Code Name                             */
+    qproperty-line-fg-unknown-name                : navy;        /* Regular Unknown Name                          */
+    qproperty-line-fg-collapsed-line              : blue;        /* Collapsed line                                */
+    qproperty-line-bg-default                     : white;       /* Default background                            */
+    qproperty-line-bg-selected                    : #C0BBAF;     /* Selected background                           */
+    qproperty-line-pfx-libfunc                    : cyan;        /* Line prefix: Library function                 */
+    qproperty-line-pfx-func                       : black;       /* Line prefix: Regular function                 */
+    qproperty-line-pfx-insn                       : maroon;      /* Line prefix: Single instruction               */
+    qproperty-line-pfx-data                       : gray;        /* Line prefix: Data bytes                       */
+    qproperty-line-pfx-unexplored                 : olive;       /* Line prefix: Unexplored byte                  */
+    qproperty-line-pfx-extern                     : fuchsia;     /* Line prefix: External name definition segment */
+    qproperty-line-pfx-current-line               : blue;        /* Line prefix: Current line                     */
+    qproperty-line-pfx-current-item               : #0044ff;     /* Line prefix: Current item                     */
+    qproperty-line-pfx-hidden-line                : black;       /* Line prefix: Hidden line                      */
+    qproperty-line-pfx-lumina                     : #32CD32;     /* Line prefix: Lumina                           */
+}
+
+@def dark_highlight_color rgba(96, 00, 96, 0.80);
+
+CustomIDAMemo[os-dark-theme="true"]
+{
+    font-size: 14px;
+    border: none;
+
+    qproperty-line-fg-default: #aaaaaa;
+    qproperty-line-fg-regular-comment: #ffc5f3;
+    qproperty-line-fg-repeatable-comment: #82607e;
+    qproperty-line-fg-automatic-comment: #666666;
+    qproperty-line-fg-insn: white;
+    qproperty-line-fg-dummy-data-name: #ebebb9;
+    qproperty-line-fg-regular-data-name: #ebebb9;
+    qproperty-line-fg-demangled-name: #ffecbb;
+    qproperty-line-fg-punctuation: #c0c0c0;
+    qproperty-line-fg-charlit-in-insn: #69d200;
+    qproperty-line-fg-strlit-in-insn: #00ff00;
+    qproperty-line-fg-numlit-in-insn: #d25032;
+    qproperty-line-fg-void-opnd: #ff4646;
+    qproperty-line-fg-code-xref: #ffaa7f;
+    qproperty-line-fg-data-xref: #7c7c61;
+    qproperty-line-fg-code-xref-to-tail: #d25032;
+    qproperty-line-fg-data-xref-to-tail: #808000;
+    qproperty-line-fg-error: #ff3437;
+    qproperty-line-fg-line-prefix: #c0c0c0;
+    qproperty-line-fg-opcode-byte: #595959;
+    qproperty-line-fg-extra-line: #ffc5f3;
+    qproperty-line-fg-alt-opnd: #ffaaff;
+    qproperty-line-fg-hidden: #ffd200;
+    qproperty-line-fg-libfunc: #00ffff;
+    qproperty-line-fg-locvar: #ff8000;
+    qproperty-line-fg-dummy-code-name: #ffd200;
+    qproperty-line-fg-asm-directive: #9dd600;
+    qproperty-line-fg-macro: #df077e;
+    qproperty-line-fg-strlit-in-data: #69d200;
+    qproperty-line-fg-charlit-in-data: #79f300;
+    qproperty-line-fg-numlit-in-data: #d25032;
+    qproperty-line-fg-keyword: #ababab;
+    qproperty-line-fg-register-name: #73adad;
+    qproperty-line-fg-import-name: #ff5afd;
+    qproperty-line-fg-segment-name: #ffff7f;
+    qproperty-line-fg-dummy-unknown-name: #aaff00;
+    qproperty-line-fg-code-name: #ffd200;
+    qproperty-line-fg-unknown-name: #ffaaff;
+    qproperty-line-fg-collapsed-line: #ffff00;
+    qproperty-line-bg-default: #2d2d2d;
+    qproperty-line-bg-selected: #e1ad32;
+    qproperty-line-pfx-libfunc: #00ffff;
+    qproperty-line-pfx-func: #666666;
+    qproperty-line-pfx-insn: #aa0000;
+    qproperty-line-pfx-data: #7c7c61;
+    qproperty-line-pfx-unexplored: #9d9d00;
+    qproperty-line-pfx-extern: #ff55ff;
+    qproperty-line-pfx-current-line: #ffaa00;
+    qproperty-line-pfx-lumina: #32cd32;
+    qproperty-graph-bg-top: #b2b2b2;
+    qproperty-graph-bg-bottom: #b2b2b2;
+    qproperty-graph-node-title-normal: #f5f5f5;
+    qproperty-graph-node-title-selected: #aa9f98;
+    qproperty-graph-node-title-current: #5e5854;
+    qproperty-graph-node-frame-group: #ffff00;
+    qproperty-graph-node-shadow: #242424;
+    qproperty-graph-node-high1: #003900;
+    qproperty-graph-node-high2: #6d0000;
+    qproperty-graph-node-foreign: #ff0000;
+    qproperty-graph-edge-normal: #0043cb;
+    qproperty-graph-edge-yes: #009100;
+    qproperty-graph-edge-no: #bc0000;
+    qproperty-graph-edge-high: #c68e00;
+    qproperty-graph-edge-selected: #aa5500; /* brown-ish */
+    qproperty-graph-node-frame-selected: #aa5500;   /* brown-ish */
+    qproperty-line-fg-patched-bytes: #804040;
+    qproperty-line-fg-unsaved-changes: #ff8000;
+    qproperty-line-bg-highlight: ${dark_highlight_color};
+    qproperty-line-bg-bpt-enabled: #760000;
+    qproperty-line-bg-bpt-disabled: #00ff00;
+    qproperty-line-bg-bpt-unavailable: #ff8000;
+    qproperty-bookmark-star-outline: white;
+}
+
+CustomIDAMemo[os-dark-theme="true"][hints="true"]
+{   
+    
+    qproperty-line-bg-default: #424242;
+}
+
+CustomIDAMemo[os-dark-theme="true"][debugging="true"]
+{
+    
+    qproperty-line-bg-default: #4D4D4D;
+}
+
+QWidget
+{
+    font-size: 12pt;
+}
+CustomIDAMemo {
+   font-size: 14pt;
+  }
+
+QTextEdit, QPlainTextEdit {
+    background-color: #f7f7f7;
+    border: 2px solid #b3b3b3;
+    border-radius: 5px;
+    font-size: 14pt; /* 十六进制视图的字体大小 */
+}
+
+QLineEdit {
+    border-radius: 8px;
+    margin-top: 3px; /* 设置上外边距为 10px */
+    margin-bottom: 3px; /* 设置下外边距为 10px */
+}
+
+
+QTreeView {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    color: #333;
+    background-color: #ffffff;
+    border: none;
+}
+  
+QTreeView::item:selected {
+background-color: #E5E5E5;
+color: #333;
+}
+
+QTreeView::branch {
+background-color: #ffffff;
+border: none;
+}
+  
+  
+
+
+/* 
+iOS 风格标签页 
+*/
+/* QTabWidget::pane {
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    
+} */
+
+QTabBar::tab {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 25px;
+    font-weight: bold; /* 设置字体为粗体 */
+    color: #333333;
+    margin: 2px; 
+}
+
+QTabBar QToolButton {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 0px;
+    margin: 2px 2px; 
+}
+
+
+QTabBar::close-button
+{   
+    image: url("$RELPATH/ico/close.png");
+    width: 15px; /* 调整箭头图标大小 */
+    height: 15px;
+    margin-right: 2px;
+}
+
+QTabBar::close-button:hover
+{
+    image: url("$RELPATH/ico/close_hover.png");
+    width: 15px; /* 调整箭头图标大小 */
+    height: 15px;
+}
+
+
+QTabBar::tab:selected {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #007AFF, stop: 1 #40A0E0); 
+    color: #ffffff;
+}
+
+
+/* iOS 风格工具栏 */
+QToolBar {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QToolButton {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 2px 2px; 
+}
+
+QToolButton:left-arrow {
+    image: url("$RELPATH/ico/left-arrow.png");
+    width: 15px; 
+    height: 15px;
+}
+
+QToolButton:right-arrow {
+    image: url("$RELPATH/ico/right-arrow.png");
+    width: 15px;
+    height: 15px;
+}
+
+QToolButton:hover {
+    background: #e5e5e5;
+}
+
+QPushButton {
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 8px 14px;
+    color: #333333;
+    font-weight: bold; 
+    margin: 3px 0; 
+}
+
+QPushButton:hover {
+    background-color: #e5e5e5;
+}
+
+
+
+QToolButton:checked {
+    background: #007aff;
+    color: #ffffff;
+}
+
+/* iOS 风格菜单栏 */
+QMenuBar {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    border: 1px solid #dcdcdc;
+    padding: 0 5px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 5px 10px;
+    color: #333333;
+    border-radius: 5px; /* 添加圆角边框 */
+    /*border: 2px solid #C8C7CC;  添加浅灰色边框 */
+    margin: 1 3px; /* 添加水平外边距 */
+}
+
+QMenuBar::item:selected {
+    background: #333333;
+    color: #ffffff;
+}
+
+
+
+QMenu {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    border: 1px solid #dddddd; /* 菜单边框颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    padding: 5px; /* 内边距 */
+    font-size: 22px; /* 字体大小 */
+    font-weight: normal; /* 字体粗细 */
+    font-family: "San Francisco", "Helvetica Neue", Arial, sans-serif; /* iOS 字体 */
+}
+
+QMenu::item {
+    padding: 8px 14px; /* 菜单项内边距 */
+    color: #333333; /* 字体颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    border-bottom: 2px solid #cccccc; /* 每个菜单项底部边框 */
+}
+
+QMenu::item:selected {
+    padding-left: 10px;
+    background-color: #333333; /* 选中项的背景颜色 */
+    color: #ffffff; /* 选中项的字体颜色 */
+    border-radius: 8px; /* 圆角边框 */
+    border-bottom: 2px solid #cccccc; /* 每个菜单项底部边框 */
+}
+
+/* 去掉最后一个菜单项的边框 */
+QMenu::item:last-child {
+    border-bottom: none; /* 最后一个菜单项不显示底部边框 */
+}
+
+
+/* iOS 风格状态栏 */
+QStatusBar {
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    border-top: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+QStatusBar QLabel {
+    color: #222222; /* iOS 风格的字体颜色 */
+    font-size: 23px; /* 状态栏字体大小 */
+    font-weight: bold; /* 设置字体为粗体 */
+}
+
+
+QLabel {
+    color: #333333; /* 文字颜色 */
+    font-size: 25px; /* 字体大小 */
+    font-weight: bold; /* 粗体 */
+    font-family: "San Francisco", "Helvetica Neue", Arial, sans-serif; /* iOS 字体 */
+}
+
+
+
+DockWidgetTitle {
+    color: #333333; /* 字体颜色与其他控件一致 */
+    background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
+    min-height: 30px; /* 设置最小高度，以确保标题区域足够 */
+    height: 30px; /* 确保标题区域的高度一致 */
+    padding: 0 10px; /* 设置内边距 */
+    border: 1px solid #dcdcdc; /* 边框颜色与其他控件一致 */
+    border-radius: 8px; /* 边角圆度，与其他控件一致 */
+}
+
+
+DockWidgetTitle QPushButton {
+    color: #333333; /* 按钮文字颜色与标题一致 */
+    background: transparent; /* 背景透明 */
+    border: none; /* 无边框 */
+    min-height: 30px; /* 按钮高度与标题区域一致 */
+    min-width: 30px; /* 按钮宽度设置为最小值 */
+    margin: 0; /* 去除外边距 */
+    padding: 0; /* 去除内边距 */
+}
+
+
+DockWidgetTitle QPushButton:hover {
+    background: #e5e5e5; /* 鼠标悬停时背景颜色，增加视觉反馈 */
+    border-radius: 4px; /* 鼠标悬停时圆角，与 iOS 风格一致 */
+}
+
+
+
+
+QToolTip, QTipLabel {
+    background-color: #ffffff; /* 设置背景色为白色 */
+    border: 1px solid #dcdcdc; /* 设置边框颜色为灰色 */
+    border-radius: 8px; /* 设置圆角为 8px */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* 设置阴影效果 */
+    padding: 3px; /* 设置内边距为 10px */
+    font-size: 18px; /* 设置字体大小为 14px */
+    font-weight: bold;
+    font-family: "San Francisco", "Helvetica Neue", Arial, sans-serif; /* 设置字体为 iOS 风格的字体 */
+}
+
+QScrollBar {
+    background: #f7f7f8;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+}
+
+QScrollBar::handle {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:hover {
+    background: #e5e5e5;
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+    width: 0;
+    height: 0;
+}
+
+QComboBox {
+    color: black; /* iOS 默认黑色文字 */
+    border: 2px solid #C8C7CC; /* iOS 默认边框颜色 */
+    border-radius: 8px; /* iOS 默认圆角 */
+    background-color: white; /* iOS 默认白色背景 */
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+
+QComboBox QAbstractItemView {
+    /* iOS 下拉列表样式 */
+    background-color: white;
+    border: 2px solid #C8C7CC;
+    border-radius: 8px;
+    margin: -2px; /* 负边距，使下拉列表略微超出 QComboBox 的边界 */
+}
+
+QComboBox QAbstractItemView::item {
+    /* iOS 下拉列表选项样式 */
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 8px; /* 设置选中项圆角 */
+    padding: 2px; /* 增加内边距，使选项内容与边框之间留出一些空间 */
+}
+QComboBox QAbstractItemView::item:selected {
+    /* iOS 下拉列表选中项样式 */
+    background-color: #007aff; /* 设置选中项背景颜色，例如蓝色 */
+    color: white; /* 设置选中项字体颜色为白色 */
+    border-radius: 8px; /* 设置选中项圆角 */
+}
+
+QAbstractItemView::item:selected {
+    /* iOS 下拉列表选中项样式 */
+    background-color: #007aff; /* 设置选中项背景颜色，例如蓝色 */
+    color: white; /* 设置选中项字体颜色为白色 */
+    border-radius: 8px; /* 设置选中项圆角 */
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px; /* 调整按钮宽度 */
+    border-left-width: 2px; /* 按钮左侧边框宽度 */
+    border-left-color: #C8C7CC; /* 按钮左侧边框颜色 */
+    border-left-style: solid; /* 按钮左侧边框样式 */
+    border-top-right-radius: 8px; /* 右上角圆角 */
+    border-bottom-right-radius: 8px; /* 右下角圆角 */
+}
+QComboBox::down-arrow {
+    image: url("$RELPATH/ico/down.png"); /* 替换为您自己的向下箭头图标路径 */
+    width: 12px; /* 调整箭头图标大小 */
+    height: 12px;
+}
+
+QComboBox QLineEdit {
+    border-radius: 8px;
+    margin: 0px;
+}
+
+
+
+CLIWidget > QGroupBox > QPushButton,
+CLIWidget > QGroupBox > QPushButton:hover,
+CLIWidget > QGroupBox > QPushButton:focus {
+    border: none;
+    background-color: #007AFF;
+    min-width: 80px;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+CLIWidget > QGroupBox {
+    margin-top: 0;
+}
+
+
+
