@@ -173,7 +173,7 @@ QLineEdit {
 
 
 QTreeView {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 12pt;
     color: #333;
     background-color: #ffffff;
@@ -207,11 +207,14 @@ QTabBar::tab {
     background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
     border: 2px solid #dcdcdc;
     border-radius: 8px;
-    padding: 8px 16px;
-    font-size: 25px;
+    padding: 10px 4px 10px 4px;
+    font-size: 21px;
     font-weight: bold; /* 设置字体为粗体 */
+    font-family: "Comic Sans MS","Sarasa Fixed Slab K"; /* 设置字体为 iOS 风格的字体 */
     color: #333333;
-    margin: 2px; 
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 2px; 
 }
 
 QTabBar QToolButton {
@@ -219,7 +222,7 @@ QTabBar QToolButton {
     border: 1px solid #dcdcdc;
     border-radius: 8px;
     padding: 0px;
-    margin: 2px 2px; 
+    margin: 0px 0px; 
 }
 
 
@@ -228,7 +231,7 @@ QTabBar::close-button
     image: url("$RELPATH/ico/close.png");
     width: 15px; /* 调整箭头图标大小 */
     height: 15px;
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 QTabBar::close-button:hover
@@ -286,6 +289,7 @@ QPushButton {
     color: #333333;
     font-weight: bold; 
     margin: 3px 0; 
+    font-family: "Comic Sans MS", Arial, sans-serif; /* iOS 风格的字体 */
 }
 
 QPushButton:hover {
@@ -304,6 +308,7 @@ QMenuBar {
     background-color: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0, stop: 0 #C8C8C8, stop: 1 #FFFFFF);
     border: 1px solid #dcdcdc;
     padding: 0 5px;
+    font-family: "Comic Sans MS"; /* iOS 字体 */
 }
 
 QMenuBar::item {
@@ -329,7 +334,7 @@ QMenu {
     padding: 5px; /* 内边距 */
     font-size: 22px; /* 字体大小 */
     font-weight: normal; /* 字体粗细 */
-    font-family: "San Francisco", "Helvetica Neue", Arial, sans-serif; /* iOS 字体 */
+    font-family: "Comic Sans MS",Arial, sans-serif; /* iOS 字体 */
 }
 
 QMenu::item {
@@ -359,20 +364,22 @@ QStatusBar {
     border-top: 1px solid #dcdcdc;
     border-radius: 8px;
     padding: 5px 10px;
+    font-family: "Comic Sans MS"; /* iOS 字体 */
 }
 
 QStatusBar QLabel {
     color: #222222; /* iOS 风格的字体颜色 */
     font-size: 23px; /* 状态栏字体大小 */
     font-weight: bold; /* 设置字体为粗体 */
+    font-family: "Comic Sans MS"; /* iOS 字体 */
 }
 
 
 QLabel {
     color: #333333; /* 文字颜色 */
-    font-size: 25px; /* 字体大小 */
+    font-size: 26px; /* 字体大小 */
     font-weight: bold; /* 粗体 */
-    font-family: "San Francisco", "Helvetica Neue", Arial, sans-serif; /* iOS 字体 */
+    font-family:Arial, sans-serif; /* iOS 字体 */
 }
 
 
@@ -385,6 +392,7 @@ DockWidgetTitle {
     padding: 0 10px; /* 设置内边距 */
     border: 1px solid #dcdcdc; /* 边框颜色与其他控件一致 */
     border-radius: 8px; /* 边角圆度，与其他控件一致 */
+    font-family: "Comic Sans MS";
 }
 
 
@@ -415,7 +423,7 @@ QToolTip, QTipLabel {
     padding: 3px; /* 设置内边距为 10px */
     font-size: 18px; /* 设置字体大小为 14px */
     font-weight: bold;
-    font-family: "San Francisco", "Helvetica Neue", Arial, sans-serif; /* 设置字体为 iOS 风格的字体 */
+    font-family: "Comic Sans MS", "Helvetica Neue", Arial, sans-serif; /* 设置字体为 iOS 风格的字体 */
 }
 
 QScrollBar {
