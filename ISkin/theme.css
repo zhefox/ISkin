@@ -162,13 +162,12 @@ QTextEdit, QPlainTextEdit {
     background-color: #f7f7f7;
     border: 2px solid #b3b3b3;
     border-radius: 5px;
-    font-size: 14pt; /* 十六进制视图的字体大小 */
 }
 
 QLineEdit {
     border-radius: 8px;
-    margin-top: 3px; /* 设置上外边距为 10px */
-    margin-bottom: 3px; /* 设置下外边距为 10px */
+    margin-top: 3px; 
+    margin-bottom: 3px; 
 }
 
 
@@ -522,6 +521,7 @@ CLIWidget > QGroupBox > QPushButton:focus {
     background-color: #007AFF;
     min-width: 80px;
     color: white;
+    padding: 2px;
     border-radius: 5px;
     
 }
