@@ -1,6 +1,12 @@
 # ISkin
 Theme for IDA pro skin,ios style.
 ## How to use
+!!!
+update! if you want use new hi-xxx version,you should add a system PATH var:QT_AUTO_SCREEN_SCALE_FACTOR = 1
+
+![QQ_1743501705998](https://github.com/user-attachments/assets/dd5a43d7-efff-4a38-ba2e-3a95e4fd0dea)
+
+!!!
 Just need u Move ISkin folder to $IDA/theme/ , then IDA->Option->color->change theme
 
 if u want same as me, u should install "Comic Sans MS" font 
